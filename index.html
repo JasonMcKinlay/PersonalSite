@@ -15,7 +15,14 @@
     p {
       text-align: justify;
     }
+
+    /* #floatingMessageInput {
+      height: 150px;
+    } */
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Matemasie&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="bg-primary">
@@ -24,7 +31,7 @@
       <div class="px-5 pt-4 pb-1 my-5 mx-center text-left">
         <h1 class="display-3 fw-bold text-light text-center">Hi, I'm Jason!</h1>
           <div>
-            <p class="lead mb-4 display-6 text-light text-center">I'm a computer programmer, web developer, and graphic designer.</p>
+            <p class="lead mb-4 display-6 text-light text-center">I'm a full-stack developer and computer programmer.</p>
           </div>
       </div>
     </div>
@@ -34,7 +41,7 @@
     <div class="container px-4" id="featured-3">  
       <img src="public/assets/headshot.png" alt="headshot" class="img-fluid rounded mx-auto d-block pt-5">
         <h2 class="display-5 pt-3 pb-3 text-body-emphasis text-center fw-medium">About Me</h2>
-        <p class="text-center col-lg-9 pt-3 fs-5 fw-normal pb-3 mx-auto">I am a 19-year-old developer based in State College, PA whose first goal is to be able to  use my passions to benefit others. Lorem ipsum odor amet, consectetuer adipiscing elit. Risus ac elit himenaeos; dignissim adipiscing mi. Sapien eros enim ornare netus suscipit quis cursus.</p>
+        <p class="text-center col-lg-9 pt-3 fs-5 fw-normal pb-3 mx-auto">I am a 19-year-old developer based in State College, PA whose first goal is to use my passions to benefit others. Ever since I was a kid, I loved the art of creating, whether it be graphics, films, or even music. Now I get to continue that spark in an all new way.</p>
         <img src="public/assets/signature.png" alt="signature" class="img-fluid rounded mx-auto d-block pb-5">
         <h2 class="pb-3 border-bottom"></h2>
         <div class="row g-4 pt-5 row-cols-1 row-cols-lg-3 ">
@@ -45,7 +52,7 @@
               </svg>
             </div>
             <h3 class="fs-2 text-body-emphasis">Aspiring Creative</h3>
-            <p class="text-right col-lg-11">Since I was young, I've always had an eye for creative direction, which can help me bring your projects to life.</p>
+            <p class="text-right col-lg-11">As a graphic designer, I've always had an eye for eye-catching visuals, which can help me bring your projects to life.</p>
           </div>
           <div class="feature col">
             <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
@@ -63,10 +70,84 @@
                 <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
               </svg>
             </div>
-            <h3 class="fs-2 text-body-emphasis">Esteemed Background</h3>
+            <h3 class="fs-2 text-body-emphasis">Renowned Education</h3>
             <p class="col-lg-11">Ever since before high school, I knew I wanted to pursue software development, which I currently am at the Pennsylvania State University.</p>
           </div>
         </div>
+      </div>
+
+      <div class="container col-lg-10 text-center pt-5">
+        <div class="row py-5 col-lg-8 mx-auto">
+          <div class="col">
+            <h1 class="fw-light">JavaScript</h1>
+          </div>
+          <div class="col">
+            <h1 class="fw-light">Node.js</h1>
+          </div>
+          <div class="col">
+            <h1 class="fw-light">React</h1>
+          </div>
+        </div>
+        <div class="row pb-5 col-lg-6 mx-auto">
+          <div class="col">
+            <h1 class="fw-light">Databases</h1>
+          </div>
+          <div class="col">
+            <h1 class="fw-light">PostgreSQL</h1>
+          </div>
+        </div>
+        <div class="row col-lg-6 mx-auto">
+          <div class="col">
+            <h1 class="fw-light">Git</h1>
+          </div>
+        </div>
+        <h2 class="py-3 border-bottom"></h2>
+      </div>
+      
+      <div id="myCarousel" class="carousel slide mb-6 col-lg-6 mx-auto pt-5" data-bs-ride="carousel">
+        <h1 class="text-center pb-5 fw-bold">Here's a glimpse at what I've been working on.</h1>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img class="bd-placeholder-img" src="public/assets/keeper.png" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Keeper</h1>
+                <p class="opacity-75">A decentralized note-keeping app, developed using React and Internet Computer. Allows users to write and store notes on the ICP blockchain.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="bd-placeholder-img" src="public/assets/courseScheduler.png" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Course Scheduler</h1>
+                <p class="opacity-75">A GUI application using JDBC connectivity and SQL that allows admins and students to view, enroll, or create courses and terms.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <img class="bd-placeholder-img" src="public/assets/secrets.png" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Secrets Sharer</h1>
+                <p class="opacity-75">A web app focusing on authentication and security, allowing users to view and post secrets utilizing App Brewery's Secrets API.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     
 
@@ -97,20 +178,16 @@
           </div>
           <div class="col-md-10 mx-auto col-lg-5">
             <form class="p-4 p-md-5 border rounded-4 bg-body-tertiary">
-                <div class="form-floating mb-3  col-lg-5 d-inline-flex">
-                    <input type="message" class="form-control" id="floatingFNameInput" placeholder="Message" fdprocessedid="aj61rb">
-                    <label for="floatingMessage">First Name</label>
-                </div>
-                <div class="form-floating mb-3 col-lg-5 d-inline-flex">
-                    <input type="message" class="form-control" id="floatingLNameInput" placeholder="Message" fdprocessedid="aj61rb">
-                    <label for="floatingMessage">Last Name</label>
+                <div class="form-floating mb-3 col-lg-12 d-inline-flex">
+                    <input type="message" class="form-control" id="floatingFNameInput" placeholder="Name" fdprocessedid="aj61rb">
+                    <label for="floatingMessage">Name</label>
                 </div>
                 <div class="form-floating mb-3">
                     <input type="email" class="form-control" id="floatingEmailInput" placeholder="name@example.com" fdprocessedid="80ai3g">
                     <label for="floatingInput">Email address</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="message" class="form-control" id="floatingMessageInput" placeholder="Message" fdprocessedid="aj61rb">
+                    <textarea type="message" class="form-control" id="floatingMessageInput" placeholder="Message" fdprocessedid="aj61rb"></textarea>
                     <label for="floatingMessage">Message</label>
                 </div>
                 <button class="w-100 btn btn-lg btn-primary" type="submit" fdprocessedid="fd72d">Send</button>
@@ -137,6 +214,7 @@
         <span class="nav justify-content-center border-bottom pb-3 mb-3"></span>
         <p class="text-center text-body-secondary pt-3">© 2024 Jason McKinlay</p>
       </footer>
+      
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
