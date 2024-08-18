@@ -1,14 +1,14 @@
+import { createRoot } from 'react-dom/client';
 import express from "express";
 
 const port = 3000;
 const app = express();
 
-app.get("/", (req, res) => {
-    res.render("index.ejs");
-})
+document.body.innerHTML = '<div id="app"></div>';
+const root = createRoot(document.getElementById('app'));
 
-app.get("/contact", (req, res) => {
-    res.render("contact.ejs");
+app.get("/", (req, res) => {
+    root.render(<h1>Hello, world</h1>);
 })
 
 app.listen(port, console.log(`Server listening on port ${port}.`));
